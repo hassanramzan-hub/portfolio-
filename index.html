@@ -1,0 +1,338 @@
+
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hassan Ramzan | My Portfolio</title>
+
+    <!-- Day 4: CSS Fundamentals -->
+    <style>
+
+  * {
+    box-sizing: border-box;
+  }img {
+  max-width: 100%;
+  height: auto;
+}  
+body {
+  margin: 0;
+  padding: 10px;
+}
+img {
+  display: block;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 360px) {
+  body {
+    padding: 5px;
+  }
+}
+</style>
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.box {
+  background-color: skyblue;
+  padding: 20px;
+  border: 2px solid blue;       body {
+            background-color: lightyellow;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 15px;
+        }
+
+        header h2 {
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        h1 {
+            color: darkblue;
+            font-size: 32px;
+        }
+
+        h2 {
+            color: darkblue ;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        section {
+            background-color: sky blue;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #dddddd;
+        }
+
+        article {
+            background-color: #f0f8ff;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid darknude;
+        }
+
+        a {
+            color: light nude;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        input,
+        textarea {
+            display: block;
+            width: 95%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid gray;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        footer {
+            background-color: purple;
+            color: yellow;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer p {
+            color: white;
+        }
+        img {
+  max-width: 100%;
+  height: auto;
+}
+   
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.box {
+  background-color: skyblue;
+  padding: 20px;
+  border: 2px solid blue;
+ } 
+ /* Mobile Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 40px;
+
+  }
+  p {
+    font-size: 16px;
+  }
+}
+ </style>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <h2>Hassan Ramzan</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Hello, I'm Hassan Ramzan!</h1>
+
+            <p>
+                Welcome to my personal portfolio website.
+                I am learning Full-Stack Web Development.
+            </p>
+
+            <a href="#projects">View My Projects</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                My name is Hassan Ramzan.
+                I am a beginner web developer.
+                I am learning HTML, CSS and JavaScript.
+                My goal is to become a professional
+                Full-Stack Developer.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <article>
+                <h3>Project 1: Personal Portfolio</h3>
+                <p>
+                    A personal portfolio website built
+                    using semantic HTML.
+                </p>
+            </article>
+
+            <article>
+                <h3>Project 2: Registration Page</h3>
+                <p>
+                    A basic registration page using
+                    HTML form elements.
+                </p>
+            </article>
+
+            <article>
+                <h3>Project 3: My First Web Page</h3>
+                <p>
+                    My first practice project in
+                    web development.
+                </p>
+            </article>
+        </section>
+
+        <!-- Day 3: Accessible Contact Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to contact me!</p>
+
+            <form action="#" method="post">
+
+                <div>
+                    <label for="full-name">Full Name:</label>
+
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="fullName"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required
+                        aria-describedby="name-hint"
+                    >
+
+                    <small id="name-hint">
+                        Please enter your full name.
+                    </small>
+                </div>
+
+                <div>
+                    <label for="email">Email Address:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                        aria-describedby="email-hint"
+                    >
+
+                    <small id="email-hint">
+                        Please enter a valid email address.
+                    </small>
+                </div>
+
+                <div>
+                    <label for="message">Your Message:</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message"
+                        required
+                        aria-describedby="message-hint"
+                    ></textarea>
+
+                    <small id="message-hint">
+                        Please write your message here.
+                    </small>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Hassan Ramzan.
+            All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
